@@ -1,0 +1,17 @@
+
+syntax='proto3';
+
+package messages;
+
+
+service MessageController {
+  rpc Chat (sentMessage) returns (getMessage) {}
+}
+
+
+message sentMessage {
+  string msg = 1;
+}
+
+message getMessage {}
+  
